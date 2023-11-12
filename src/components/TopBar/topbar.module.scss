@@ -1,0 +1,19 @@
+@import "../../scss/partials";
+@import "../../scss/variable";
+.topbarContainer {
+  @include flex-container;
+  justify-content: space-between;
+  background-color: $WHITE;
+  color: $PRIMARY;
+  height: 60px;
+  font-family: "Roboto", sans-serif;
+  padding-left:15px;
+  padding-right: 15px;
+  font-size: $FONT_LARGE;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index: 100;
+  border-bottom: 1px solid $SECONDARY_1;
+}

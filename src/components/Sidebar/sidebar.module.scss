@@ -1,0 +1,29 @@
+@import "../../scss/partials";
+@import "../../scss/variable";
+.sidebarContainer {
+  @include fontRoboto;
+  display: flex;
+  justify-content: center;
+  background-color: $PRIMARY;
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  color: $WHITE;
+  z-index: 100;
+  .menusContainer__menu {
+    @include flex-center;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 10px;
+    height: 60px;
+    color: $WHITE;
+    padding: 10px;
+    &:hover {
+      background-color: $SECONDARY_1;
+      border-radius: 4px;
+      color: $PRIMARY;
+    }
+  }
+}

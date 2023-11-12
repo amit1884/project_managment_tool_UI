@@ -1,0 +1,15 @@
+
+@import '../../scss/partials';
+@import '../../scss/variable';
+
+.projectsContainer{
+ @include fontRoboto;
+ .projectsHeader{
+    height: 60px;
+    color: $PRIMARY;
+ }
+ .projectsActionBar{
+    @include flex-container;
+    justify-content: space-between;
+ }
+}

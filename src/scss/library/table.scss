@@ -1,0 +1,8 @@
+@import '../partials';
+@import '../variable';
+
+.custom-table{
+    border:1px solid $BORDER_GRAY;
+    margin-top:10px;
+    border-radius: 4px;
+}

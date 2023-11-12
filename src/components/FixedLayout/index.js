@@ -1,8 +1,16 @@
 import React from 'react'
-
-function FixedLayout() {
+import TopBar from '../TopBar'
+import Sidebar from '../Sidebar'
+import styles from '@/components/FixedLayout/fixedLayout.module.scss'
+function FixedLayout({children}) {
   return (
-    <div>FixedLayout</div>
+   <>
+   <TopBar/>
+   <Sidebar/>
+    <div className={styles.fixedLayoutContainer}>
+      {children}
+    </div>
+   </>
   )
 }
 

@@ -1,0 +1,55 @@
+@import "../scss/variable";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.btn-primary {
+  background-color: $PRIMARY;
+  border: none;
+  outline: none;
+  color: $WHITE;
+  padding: 10px;
+  border-radius: 4px;
+  &:hover:not(:disabled){
+    cursor: pointer;
+  }
+  &:disabled{
+    opacity: 0.8;
+    cursor:not-allowed;
+  }
+}
+.btn-secondary {
+  background-color: $WHITE;
+  border: 1px solid $PRIMARY;
+  outline: none;
+  color: $PRIMARY;
+  padding: 10px;
+  border-radius: 4px;
+  &:hover:not(:disabled) {
+    cursor: pointer;
+  }
+  &:disabled{
+    opacity: 0.8;
+    cursor:not-allowed;
+  }
+}
+.m-10{
+  margin:10px;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.ml-left{
+  margin-left:10px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.active-field{
+  border: 1px solid $PRIMARY !important;
+}
